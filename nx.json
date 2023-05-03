@@ -1,0 +1,127 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "start-prod",
+          "start",
+          "start-no-browser",
+          "start-no-browser-windows",
+          "start-win",
+          "generate-build-meta",
+          "build",
+          "build:playground",
+          "build:dev",
+          "build:qa",
+          "build:pre",
+          "build:prod",
+          "test",
+          "lint:css",
+          "styleguide",
+          "styleguide:build",
+          "publish",
+          "status",
+          "generate"
+        ]
+      }
+    }
+  },
+  "targetDefaults": {
+    "start-prod": {
+      "dependsOn": [
+        "^start-prod"
+      ]
+    },
+    "start": {
+      "dependsOn": [
+        "^start"
+      ]
+    },
+    "start-no-browser": {
+      "dependsOn": [
+        "^start-no-browser"
+      ]
+    },
+    "start-no-browser-windows": {
+      "dependsOn": [
+        "^start-no-browser-windows"
+      ]
+    },
+    "start-win": {
+      "dependsOn": [
+        "^start-win"
+      ]
+    },
+    "generate-build-meta": {
+      "dependsOn": [
+        "^generate-build-meta"
+      ]
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "build:playground": {
+      "dependsOn": [
+        "^build:playground"
+      ]
+    },
+    "build:dev": {
+      "dependsOn": [
+        "^build:dev"
+      ]
+    },
+    "build:qa": {
+      "dependsOn": [
+        "^build:qa"
+      ]
+    },
+    "build:pre": {
+      "dependsOn": [
+        "^build:pre"
+      ]
+    },
+    "build:prod": {
+      "dependsOn": [
+        "^build:prod"
+      ]
+    },
+    "test": {
+      "dependsOn": [
+        "^test"
+      ]
+    },
+    "lint:css": {
+      "dependsOn": [
+        "^lint:css"
+      ]
+    },
+    "styleguide": {
+      "dependsOn": [
+        "^styleguide"
+      ]
+    },
+    "styleguide:build": {
+      "dependsOn": [
+        "^styleguide:build"
+      ]
+    },
+    "publish": {
+      "dependsOn": [
+        "^publish"
+      ]
+    },
+    "status": {
+      "dependsOn": [
+        "^status"
+      ]
+    },
+    "generate": {
+      "dependsOn": [
+        "^generate"
+      ]
+    }
+  }
+}
